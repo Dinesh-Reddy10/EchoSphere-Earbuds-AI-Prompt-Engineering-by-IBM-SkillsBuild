@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 204, 255, 1) 100%);
+    padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2);
+}
+
+/* Hero Section */
+.hero {
+    background: url('banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn-custom {
+    background: #00d4ff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-custom:hover {
+    background-color: #0096cc;
+}
+
+/* Feature Cards */
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h4 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Gradient Background Section */
+.bg-gradient {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 1) 0%, rgba(0, 204, 255, 1) 100%);
+}
+
+#shop h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#shop p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+#shop .btn-light {
+    background-color: white;
+    color: #00d4ff;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#shop .btn-light:hover {
+    background-color: #00d4ff;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
